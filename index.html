@@ -2,38 +2,77 @@
 <html>
  <head>
 <link type="text/css" rel="stylesheet" href="main.css">
-<div class= header>
-        <h1>Mira's Book Binding</h1>
-      </div>
-      <ul>
-       <li><a href="index.html">Home</a></li>
-       <li><a href="reviews.html">Reviews</a></li>
-       <li><a href="contact.html">Contact</a></li>
-       <li style="float:right"><a class="active" href="about.html">About Us</a></li>
-     </ul>
-    
-     <h3>Contact Us</h3>
+<body>
 
-<div class="container">
-  <form action="/action_page.php">
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    <div class="flex-container">
+        <header>
+            <div id="logo"><img src="C:\Users\eligo\Documents\Coding\Instant-Invites\Instant-Invites logo.jpg"></div>
+            <h1>instantinvites</h1>
+        </header>
+        
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li style="float:right"><a href="#about">About</a></li>
+          </ul>
+        
+        <article class="article">
+          <h2><strong>Instant Invites</strong></h2>
+          <p>We design fun and original WhatsApp and Email invitations . Easy communication & fast turnaround . Perfect for any occasion, big or small!</p>
+          <p>Welcome to Instant Invites! We specialise in fun and original WhatsApp and Email invitations. Perfect for engagements, Sheva Brachot, Birthday Parties, Bar/Bat Mitzvahs and more! Possible same day design. DM or WhatsApp for more information.</p>  
+        </article>
+        
+        <h2>Responsive Image Gallery</h2>
+<h4>Resize the browser window to see the effect.</h4>
 
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-    <input type="submit" value="Submit">
-  </form>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="C:\Users\eligo\Documents\Coding\Instant-Invites\Dalia and Eliana Invitation.jpg">
+      <img src="C:\Users\eligo\Documents\Coding\Instant-Invites\Dalia and Eliana Invitation.jpg" alt="Dalia and Eliana Invitation" width="150" height="100">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
 </div>
 
-     
-<footer>
-        <p>Contact information: <a href="mailto:@example.com">
-       mira@bookbinding.com</a></p>
-      <a href="#">Created by GoldsteinWebsites</a> 
-</footer>       
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_forest.jpg">
+      <img src="C:\Users\eligo\Documents\Coding\Instant-Invites\Aviad.jpg" alt="Aviad Invitation" width="600" height="400">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_lights.jpg">
+      <img src="C:\Users\eligo\Documents\Coding\Instant-Invites\Mindi Invite.jpg" alt="Northern Lights" width="150" height="100">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="img_mountains.jpg">
+      <img src="C:\Users\eligo\Documents\Coding\Instant-Invites\Instant-Invites logo.jpg" alt="Mountains" width="150" height="100">
+    </a>
+    <div class="desc">Add a description of the image here</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+  <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
+  <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
+</div>
+        <footer>Copyright &copy; Instant-Invites.com</footer>
+        </div>
+        
+
+</body>
 </head>
 </html>

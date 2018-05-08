@@ -34,7 +34,7 @@ footer, header, hgroup, menu, nav, section {
 body {
     background-color: white;
     margin: 0 auto; /* Center website */
-    max-width: 1000px; /* Max width */
+    max-width: 1000px; /* width */
     padding: 20px;
 }
 .flex-container > * {
@@ -48,18 +48,18 @@ body {
 }
 
 header {background: white;color:(38, 7, 78);}
-footer {background: rgb(164, 105, 241);color:white;}
+footer {background: rgb(80, 76, 76);color:white;}
 
 h1 {
     font-family: fantasy;
     font-size: 50px;
     font-weight: 1000;
-    border-left: 2px solid rgb(164, 105, 241);
+    border-left: 2px solid rgb(80, 76, 76);
     display: inline;
     float: left;
     line-height: 100px;
     height: 100px;
-    color: rgb(164, 105, 241);
+    color: rgb(80, 76, 76);
 }
 
 h2 {
@@ -83,7 +83,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(164, 105, 241);
+    background-color: rgb(80, 76, 76);
 }
 
 li {
@@ -99,51 +99,67 @@ li a {
 }
 
 li a:hover {
-    background-color: rgb(60, 34, 134);
+    background-color: rgb(41, 39, 39);
 }
-div.gallery {
-    border: 1px solid #ccc;
-}
-
-div.gallery:hover {
-    border: 1px solid #777;
-}
-
-div.gallery img {
-    width: 100%;
-    height: auto;
-}
-
-div.desc {
-    padding: 15px;
-    text-align: center;
-}
-
-* {
+{
     box-sizing: border-box;
 }
 
-.responsive {
-    padding: 0 6px;
-    float: left;
-    width: 24.99999%;
+.photo-grid {
+    text-align: center;
+    padding: 32px;
+    }
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
 }
 
-@media only screen and (max-width: 700px) {
-    .responsive {
-        width: 49.99999%;
-        margin: 6px 0;
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 32%; /* IE10 */
+    flex: 32%;
+    max-width: 32%;
+    padding: 0 4px;
+}
+
+.column img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8px;
+    vertical-align: middle;
+    text-align: center;
+
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 1000px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
     }
 }
 
-@media only screen and (max-width: 500px) {
-    .responsive {
-        width: 50%;
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
     }
-}
+   }
 
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-}
+   footer {
+      margin-top: 10px;
+   }
+   
+   footer p {
+     font-family: fantasy;
+     font-size: 10px;
+     color: white;
+   }
